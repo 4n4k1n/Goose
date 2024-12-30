@@ -1,7 +1,12 @@
-#! /bin/bash
+#!/bin/bash
 
+echo "Download the file"
 curl -L -o ~/goose.zip 'https://github.com/PaulicStudios/goose/archive/main.zip'
 
-unzip ~/goose.zip -d ~/goose
+echo "Extract the file"
+unzip -o ~/goose.zip -d ~/goose
 
-open ~/goose.app
+echo "Start the app"
+open ~/goose/goose.app
+
+echo "Done!"
