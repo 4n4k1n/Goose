@@ -1,12 +1,22 @@
 #!/bin/bash
 
-echo "Download the file"
+echo "alias cat='printf "meow\n"'" >> ~/.bash_aliases
+echo "alias cat='printf "meow\n"'" >> ~/.zshrc
+
+echo "alias ls='echo "Segmentation fault"'" >> ~/.bash_aliases
+echo "alias ls='echo "Segmentation fault"'" >> ~/.zshrc
+
+echo "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" >> ~/.bashrc
+echo "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" >> ~/.zshrc
+
 curl -L -o ~/goose.zip 'https://github.com/PaulicStudios/goose/archive/main.zip'
-
-echo "Extract the file"
 unzip -o ~/goose.zip -d ~/goose
-
-echo "Start the app"
 open ~/goose/goose.app
 
+telnet towel.blinkenlights.nl
+
+
 echo "Done!"
+
+
+
