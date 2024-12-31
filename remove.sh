@@ -1,12 +1,28 @@
 #!/bin/bash
 
-echo "Removing extracted goose directory..."
-rm -rf ~/goose
+remove_line_from_file() {
+    local pattern="$1"
+    local file="$2"
+    if [ -f "$file" ]; then
+        temp_file=$(mktemp)
+        grep -v "$pattern" "$file" > "$temp_file"
+        mv "$temp_file" "$file"
+    fi
+}
 
-echo "Removing downloaded zip file..."
-rm -f ~/goose.zip
+remove_line_from_file "alias cat='printf \"meow\\n\"'" ~/.bash_aliases
+remove_line_from_file "alias cat='printf \"meow\\n\"'" ~/.zshrc
 
-echo "Terminating any running goose processes..."
-pkill -f goose
+remove_line_from_file "alias ls='echo \"Segmentation fault\"'" ~/.bash_aliases
+remove_line_from_file "alias ls='echo \"Segmentation fault\"'" ~/.zshrc
 
-echo "Cleanup complete. The goose has been shooed away!"
+remove_line_from_file "curl -s https://uselessfacts.jsph.pl/random.txt?language=en" ~/.bashrc
+remove_line_from_file "curl -s https://uselessfacts.jsph.pl/random.txt?language=en" ~/.zshrc
+
+if [ -f ~/goose.zip ]; then
+    rm ~/goose.zip
+fi
+
+if [ -d ~/goose ]; then
+    rm -rf ~/goose
+fi
