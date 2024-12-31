@@ -15,8 +15,5 @@ open ~/goose/goose.app
 
 telnet towel.blinkenlights.nl
 
-
 echo "Done!"
-
-
 
