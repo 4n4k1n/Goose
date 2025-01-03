@@ -23,7 +23,7 @@ add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.zshrc
 add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.bashrc
 add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.zshrc
 
-curl -L -o ~/goose.zip 'https://github.com/PaulicStudios/goose/archive/main.zip'
+curl -L -o ~/goose.zip 'https://raw.githubusercontent.com/PaulicStudios/goose/refs/heads/main/goose.zip'
 unzip -o ~/goose.zip -d ~/goose
 open ~/goose/goose.app
 
