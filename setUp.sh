@@ -46,4 +46,5 @@ curl -L -o ~/goose.zip 'https://raw.githubusercontent.com/PaulicStudios/goose/re
 unzip -o ~/goose.zip -d ~/goose
 open ~/goose/goose.app
 
-exit
+source ~/.bashrc
+source ~/.zshrc
