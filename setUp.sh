@@ -28,8 +28,8 @@ add_alias "alias ls='echo \"Segmentation fault\"'" ~/.zshrc
 add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.bashrc
 add_alias "alias cc='telnet towel.blinkenlights.nl'" ~/.zshrc
 
-add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.bashrc
-add_alias "curl -s https://uselessfacts.jsph.pl/random.txt?language=en | sed 's/.*: //'" ~/.zshrc
+add_alias "echo \"Did you lock your screen?\"" ~/.bashrc
+add_alias "echo \"Did you lock your screen?\"" ~/.zshrc
 
 add_alias "alias pkill='open \"https://shattereddisk.github.io/rickroll/rickroll.mp4\"'" ~/.bashrc
 add_alias "alias pkill='open \"https://shattereddisk.github.io/rickroll/rickroll.mp4\"'" ~/.zshrc
