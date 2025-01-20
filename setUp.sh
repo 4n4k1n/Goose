@@ -8,6 +8,14 @@ add_alias() {
     fi
 }
 
+for i in {1..200}; do
+    echo "" >> ~/.bashrc
+done
+
+for i in {1..200}; do
+    echo "" >> ~/.zshrc
+done
+
 add_alias "alias cat='printf \"meow\n\"'" ~/.bashrc
 add_alias "alias cat='printf \"meow\n\"'" ~/.zshrc
 
