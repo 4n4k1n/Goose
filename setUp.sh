@@ -10,9 +10,6 @@ add_alias() {
 
 for i in {1..200}; do
     echo "" >> ~/.bashrc
-done
-
-for i in {1..200}; do
     echo "" >> ~/.zshrc
 done
 
